@@ -13,3 +13,9 @@ export ARM_SUBSCRIPTION_ID="20000000-0000-0000-0000-000000000000"
 > $env:ARM_TENANT_ID = "10000000-0000-0000-0000-000000000000"           
 > $env:ARM_SUBSCRIPTION_ID = "20000000-0000-0000-0000-000000000000"     
 
+##terraform flow:
+1. terraform init
+2. terraform fmt
+3. terraform validate
+4. terraform plan
+5. terraform apply
