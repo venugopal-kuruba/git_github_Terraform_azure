@@ -3,6 +3,11 @@
 #    argument2 = ?
 #}
 
+variable "batch" {
+    default = "b42"
+}
+
+
 
 resource "azurerm_resource_group" "devsecopsb42-rg1" {
   name     = "devsecopsb42-rg1"
