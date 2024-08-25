@@ -3,32 +3,15 @@
 #    argument2 = ?
 #}
 
-variable "batch" {
-    default = "b42"
-}
+
 
 
 
 resource "azurerm_resource_group" "devsecopsb42-rg1" {
-  name     = "devsecopsb42-rg1"
-  location = "eastus"
+  name     = var.rg1_name
+  location = var.location
   tags = {
-    env = "Development"
-  }
-}
-
-resource "azurerm_resource_group" "devsecopsb42-rg2" {
-  name     = "devsecopsb42-rg2"
-  location = "westus"
-  tags = {
-    env = "Development"
-  }
-}
-
-resource "azurerm_resource_group" "devsecopsb42-rg3" {
-  name     = "devsecopsb42-rg3"
-  location = "eastus2"
-  tags = {
-    env = "Development"
+    env = var.env
+    batch = var.batch
   }
 }
