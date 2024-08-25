@@ -19,3 +19,11 @@ export ARM_SUBSCRIPTION_ID="20000000-0000-0000-0000-000000000000"
 3. terraform validate
 4. terraform plan
 5. terraform apply
+
+
+##topic of terraform
+1.terraform resource
+2.terraform  dependecies
+3.terraform backend and locking
+4.terraform variables
+5.terraform init,fmt,validate,plan,apply,state,deploy
